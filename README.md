@@ -1,17 +1,12 @@
 # Generative-AI-projects
 A repository for my generative ai studies
 
-## LangChain
+## Beginner
 
-https://github.com/alphasecio/langchain-examples
+Simple translator
 
-https://python.langchain.com/docs/tutorials
+Joker
 
-https://python.langchain.com/docs/how_to
+Chatbot
 
----
-## LangGraph
-
-https://langchain-ai.github.io/langgraph/tutorials/
-
-https://langchain-ai.github.io/langgraph/how-tos
+Agent Tavily Search
