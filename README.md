@@ -1,12 +1,12 @@
 # Generative-AI-projects
 A repository for my generative ai studies
 
-## Beginner
+## [Beginner](https://github.com/Patotricks15/Generative-AI-projects/tree/main/beginner)
 
-Simple translator
+[Simple translator](https://github.com/Patotricks15/Generative-AI-projects/tree/main/beginner/simple_translator)
 
-Joker
+[Joker](https://github.com/Patotricks15/Generative-AI-projects/tree/main/beginner/joker)
 
-Chatbot
+[Chatbot](https://github.com/Patotricks15/Generative-AI-projects/tree/main/beginner/chatbot)
 
-Agent Tavily Search
+[Agent Tavily Search](https://github.com/Patotricks15/Generative-AI-projects/tree/main/beginner/search_tavily_agent)
