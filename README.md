@@ -24,4 +24,9 @@ Agent | Search | Tool
 
 [Talking to a website](https://github.com/Patotricks15/Generative-AI-projects/tree/main/beginner/talking_to_a_website)
 
-RAG | Document | TextSplitter | Vectorstore |Retriever | Chain
+RAG | Document | TextSplitter | Vectorstore | Retriever | Chain
+
+
+[Website chatbot](https://github.com/Patotricks15/Generative-AI-projects/tree/main/beginner/website_chatbot)
+
+Conversational RAG | Document | TextSplitter | Vectorstore | Retriever | Chain

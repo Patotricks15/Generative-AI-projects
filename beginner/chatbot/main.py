@@ -14,8 +14,6 @@ from dotenv import load_dotenv
 
 load_dotenv('.env')  # Load .env file
 
-openai = os.getenv('OPENAI_API_KEY')
-
 model = ChatOpenAI(model="gpt-3.5-turbo-1106")
 
 # Define a new graph

@@ -22,6 +22,7 @@ model = ChatOpenAI(model="gpt-3.5-turbo-1106")
 from goose3 import Goose
 from langchain_core.documents import Document
 
+# Getting the text from a website
 g = Goose()
 url_website = "https://en.wikipedia.org/wiki/Climate_change"
 article = g.extract(url_website)
@@ -40,7 +41,6 @@ vectorstore = Chroma.from_documents(splits,
                                     OpenAIEmbeddings())
 
 # Retrieve and generate a response
-
 retriever = vectorstore.as_retriever(search_type="similarity",
                                      search_kwargs={"k": 2}
                                      )
