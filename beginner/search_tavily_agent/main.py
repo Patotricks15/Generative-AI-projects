@@ -8,9 +8,6 @@ from dotenv import load_dotenv
 
 # Set up
 load_dotenv('.env')
-openai = os.getenv('OPENAI_API_KEY')
-tavily = os.getenv('TAVILY_API_KEY')
-
 model = ChatOpenAI(model="gpt-3.5-turbo-1106")
 
 # Instance the Tavily search

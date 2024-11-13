@@ -1,14 +1,11 @@
 import os
 from langchain_openai import ChatOpenAI
-from langchain_core.messages import HumanMessage, SystemMessage
 from langchain_core.prompts import ChatPromptTemplate
 from dotenv import load_dotenv
 
 
 # Set up the configs
-load_dotenv('.env')  # Load .env file
-
-openai = os.getenv('OPENAI_API_KEY')
+load_dotenv('.env')
 model = ChatOpenAI(model="gpt-3.5-turbo-1106")
 
 # Instance the ChatPromptTemplate with "topic" parameter
