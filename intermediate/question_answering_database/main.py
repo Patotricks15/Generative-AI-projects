@@ -7,11 +7,9 @@ from langchain_core.messages import SystemMessage
 from langchain_core.messages import HumanMessage
 from langgraph.prebuilt import create_react_agent
 
-# Loading the environmental variables
-load_dotenv('.env')
 
 # Reading the database sql
-db = SQLDatabase.from_uri("sqlite:///Chinook.db")
+db = SQLDatabase.from_uri("sqlite:////home/patrick/genai_projects/files/databases/Chinook.db")
 
 # Instance the model
 model = ChatOpenAI(model="gpt-3.5-turbo-1106",temperature=0)

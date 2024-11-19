@@ -13,14 +13,10 @@ from langchain_ollama import OllamaEmbeddings
 from langchain.chains import create_retrieval_chain
 from langchain.chains.combine_documents import create_stuff_documents_chain
 from langchain_core.prompts import ChatPromptTemplate
-
-# Set up
-load_dotenv('.env')
-model = ChatOpenAI(model="gpt-3.5-turbo-1106")
-
-
 from goose3 import Goose
 from langchain_core.documents import Document
+
+model = ChatOpenAI(model="gpt-3.5-turbo-1106")
 
 # Getting the text from a website
 g = Goose()
