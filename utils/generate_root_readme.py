@@ -41,6 +41,7 @@ for folder in subfolders:
 
 # Criar o arquivo README.md com o conteúdo gerado
 with open("README.md", "w") as readme_file:
+    readme_file.write("# My Generative AI Portfolio\n\n")
     readme_file.write(readme_content)
 
 print("README.md criado com sucesso!")
