@@ -1,26 +1,25 @@
-[Python Code for Extracting Key Historic Developments from Text](https://github.com/Patotricks15/Generative-AI-projects/tree/main/timeline_generator)
-
-Objective: The objective of this code is to extract key historic developments from a given text related to a specific topic.
+[Text Extraction and Key Development Identification from Historical Documents](https://github.com/Patotricks15/Generative-AI-projects/tree/main/timeline_generator)
 
 
-["Question-Answering System for Generative AI and RAG Videos"](https://github.com/Patotricks15/Generative-AI-projects/tree/main/question_answering_youtube_videos)
 
-Objective: The objective of this code is to create a question-answering system for generative AI and RAG (Retrieval-Augmented Generation) videos. The system retrieves context from a collection of videos and uses it to answer user questions.
+[Youtube Video Text Extraction and Question-Answering with Generative AI](https://github.com/Patotricks15/Generative-AI-projects/tree/main/question_answering_youtube_videos)
 
-
-["Multilingual Text Translation with OpenAI Chat"](https://github.com/Patotricks15/Generative-AI-projects/tree/main/simple_translator)
-
-Objective: The objective of this code is to demonstrate the use of the OpenAI Chat API for multilingual text translation.
+Objective: The objective of this code is to extract text from YouTube videos related to generative AI and RAG (Retrieval-Augmented Generation) and perform question-answering using generative AI models.
 
 
-[Agent for Interacting with a SQL Database Using Chat OpenAI](https://github.com/Patotricks15/Generative-AI-projects/tree/main/question_answering_database)
+[Multilingual Text Translation with OpenAI Chat](https://github.com/Patotricks15/Generative-AI-projects/tree/main/simple_translator)
 
-Objective: The objective of this code is to create an agent that interacts with a SQL database using Chat OpenAI. The agent is designed to take input questions, create syntactically correct SQLite queries, run the queries, and return the results. It uses a combination of SQLDatabaseToolkit, ChatOpenAI, and OpenAIEmbeddings to achieve this functionality.
+Objective: The objective of this code is to translate text into a specified language using the OpenAI Chat model.
 
 
-["NIKE, Inc. Executive Data Extraction and Analysis"](https://github.com/Patotricks15/Generative-AI-projects/tree/main/nike_executive_officers_information_extraction)
+[Agent for Interacting with SQL Database Using ChatOpenAI](https://github.com/Patotricks15/Generative-AI-projects/tree/main/question_answering_database)
 
-Objective: The objective of this code is to extract relevant data about executive officers from documents related to NIKE, Inc and analyze the extracted information.
+Objective: The objective of this code is to create an agent that interacts with an SQL database using ChatOpenAI to execute syntactically correct SQLite queries based on user input and return the results.
+
+
+[NIKE, Inc. Executive Data Extraction and Analysis](https://github.com/Patotricks15/Generative-AI-projects/tree/main/nike_executive_officers_information_extraction)
+
+Objective: The objective of this code is to extract and analyze data related to executives of NIKE, Inc.
 
 
 [Table Extraction from PDFs using GPT-4o-mini Model](https://github.com/Patotricks15/Generative-AI-projects/tree/main/extracting_dataframe_from_paper)
@@ -28,71 +27,73 @@ Objective: The objective of this code is to extract relevant data about executiv
 Objective: The objective of this code is to extract tables from PDF documents using the GPT-4o-mini model and save the extracted tables as Excel files.
 
 
-["Financial News Sentiment Analysis with GPT-4o-mini Model"](https://github.com/Patotricks15/Generative-AI-projects/tree/main/twitter_financial_news_sentiment)
+[Financial News Sentiment Analysis with GPT-4o-mini Model](https://github.com/Patotricks15/Generative-AI-projects/tree/main/twitter_financial_news_sentiment)
 
-Objective: The objective of this code is to perform sentiment analysis on financial news using the GPT-4o-mini model. The sentiment analysis involves extracting the financial market sentiment from the given text and providing an explanation for the chosen sentiment.
+Objective: The objective of this code is to perform sentiment analysis on financial news using the GPT-4o-mini model. The sentiment analysis involves classifying the financial news into bearish, bullish, or neutral categories and providing an explanation for the chosen sentiment.
 
 
-["Python Chatbot with Arithmetic Tools"](https://github.com/Patotricks15/Generative-AI-projects/tree/main/simple_calculator_tool)
+[Python ChatOpenAI with Mathematical Tools](https://github.com/Patotricks15/Generative-AI-projects/tree/main/simple_calculator_tool)
 
-Objective: The objective of this Python code is to create a chatbot using the langchain_openai library and implement arithmetic tools for addition and multiplication. The chatbot will be able to answer arithmetic queries using the implemented tools.
+Objective: The objective of this code is to demonstrate the integration of the Langchain OpenAI module with mathematical tools for performing arithmetic operations.
 
 
 [Check Dataframe Quality](https://github.com/Patotricks15/Generative-AI-projects/tree/main/check_dataframe_quality)
 
-Objective: The objective of this code is to perform a data quality check using ChatOpenAI and a Pandas DataFrame.
+Objective: The objective of this code is to perform a data quality check using ChatOpenAI and Pandas DataFrame.
 
 
-["AI Question-Answering System for Nike's Financial Reports"](https://github.com/Patotricks15/Generative-AI-projects/tree/main/question_answering_pdf)
+[AI-Powered Question Answering System for Nike's Financial Reports](https://github.com/Patotricks15/Generative-AI-projects/tree/main/question_answering_pdf)
 
-Objective: The objective of this AI question-answering system is to retrieve and analyze financial data from Nike's financial reports and provide concise answers to specific questions related to Nike's revenue and other financial metrics.
-
-
-[Safely Querying Enterprise Data with Langchain Agents - AI Chatbot Implementation"](https://github.com/Patotricks15/Generative-AI-projects/tree/main/summarizing_text)
-
-Objective: The objective of this code is to demonstrate how to safely query enterprise data using Langchain agents and an AI chatbot implementation.
+Objective: The objective of this AI-powered system is to use language processing and AI models to answer questions related to Nike's financial reports.
 
 
-["Question-Answering Assistant for Climate Change"](https://github.com/Patotricks15/Generative-AI-projects/tree/main/question_answering_website)
+[Safely Querying Enterprise Data with Langchain Agents - AI-Powered Blog Post Generation](https://github.com/Patotricks15/Generative-AI-projects/tree/main/summarizing_text)
 
-Objective: The objective of this code is to create a question-answering assistant for climate change by retrieving information from a given website and generating concise answers to user queries.
+Objective: The objective of this code is to use Langchain agents and OpenAI to generate a blog post on the topic of "Safely Querying Enterprise Data".
 
 
-["Population Data Analysis and Querying Tool"](https://github.com/Patotricks15/Generative-AI-projects/tree/main/question_answering_world_bank_data)
+[Question-Answering System for Climate Change Wikipedia Page](https://github.com/Patotricks15/Generative-AI-projects/tree/main/question_answering_website)
+
+Objective: The objective of this code is to create a question-answering system for the Wikipedia page on climate change using language processing and retrieval techniques.
+
+
+[Population Data Analysis and Querying Tool](https://github.com/Patotricks15/Generative-AI-projects/tree/main/question_answering_world_bank_data)
 
 Objective: The objective of this tool is to retrieve population data for specific countries and time periods, analyze the data, and provide a querying interface to obtain information about the population.
 
 
-["Chatbot Workflow with OpenAI Model Integration and Memory Saver"](https://github.com/Patotricks15/Generative-AI-projects/tree/main/chatbot)
+[Chatbot Interaction with OpenAI Model and Memory Saver](https://github.com/Patotricks15/Generative-AI-projects/tree/main/chatbot)
 
-Objective: The objective of this code is to create a chatbot workflow that integrates an OpenAI model for generating responses and utilizes a memory saver to store the conversation history.
+Objective: The objective of this code is to create a chatbot interaction using the OpenAI model and a memory saver to store the conversation history.
 
 
-["Climate Change Wikipedia Chatbot"](https://github.com/Patotricks15/Generative-AI-projects/tree/main/conversational_website)
+[Climate Change Wikipedia Chatbot](https://github.com/Patotricks15/Generative-AI-projects/tree/main/conversational_website)
 
 Objective: The objective of this code is to create a chatbot that retrieves information from the Wikipedia page on climate change and provides conversational responses to user queries.
 
 
-["Stock Data Analysis with Chatbot Integration"](https://github.com/Patotricks15/Generative-AI-projects/tree/main/question_answering_yfinance_dataframe)
+[Stock Data Analysis with Chatbot Integration](https://github.com/Patotricks15/Generative-AI-projects/tree/main/question_answering_yfinance_dataframe)
 
-Objective: The objective of this code is to demonstrate how to use the yfinance library to download historical stock data, create a pandas dataframe, and integrate a chatbot to interact with the data.
-
-
-["Orchestrating Summarization Using Langgraph"](https://github.com/Patotricks15/Generative-AI-projects/tree/main/orchestrating_summarization_using_langgraph)
-
-Objective: The objective of this code is to orchestrate the summarization process using Langgraph, which involves splitting documents, generating summaries, collapsing the summaries, and producing a final consolidated summary.
+Objective: The objective of this code is to perform stock data analysis using the yfinance library and integrate a chatbot to interact with the user for querying the data.
 
 
-["Interactive Tavily Search Agent with Language Processing"](https://github.com/Patotricks15/Generative-AI-projects/tree/main/search_tavily_agent)
+[Orchestrating Summarization Using Langgraph](https://github.com/Patotricks15/Generative-AI-projects/tree/main/orchestrating_summarization_using_langgraph)
 
-Objective: The objective of this code is to create an interactive Tavily search agent using language processing. The agent uses the OpenAI GPT-3.5 model to process user input and then utilizes the Tavily search tool to provide search results.
-
-
-["Interactive Joke Generator with OpenAI Language Model"](https://github.com/Patotricks15/Generative-AI-projects/tree/main/joker)
-
-Objective: The objective of this code is to create an interactive joke generator using the OpenAI Language Model. The user provides a topic, and the code uses the model to generate a joke related to the given topic.
+Objective: The objective of this code is to orchestrate the summarization of a set of documents using Langgraph. It involves splitting the documents, generating individual summaries, collapsing the summaries, and generating a final consolidated summary.
 
 
-["Person Information Extraction and Structured Output from Text"](https://github.com/Patotricks15/Generative-AI-projects/tree/main/person_information_extractor)
+[Interactive Tavily Search Agent with OpenAI Chat Integration](https://github.com/Patotricks15/Generative-AI-projects/tree/main/search_tavily_agent)
 
-Objective: The objective of this code is to extract relevant information about a person from a given text, such as the person's name, birth year, and height in meters. The code uses language processing and AI models to extract and structure the information.
+Objective: The objective of this code is to create an interactive Tavily search agent that integrates with OpenAI Chat. The agent uses the Tavily search tool to provide search results based on user input.
+
+
+[Interactive Joke Generator with OpenAI Language Model](https://github.com/Patotricks15/Generative-AI-projects/tree/main/joker)
+
+Objective: The objective of this code is to create an interactive joke generator using the OpenAI language model. The program takes a user input topic and generates a joke based on that topic.
+
+
+[Text Extraction and Structured Information Retrieval for Wikipedia Person Profiles](https://github.com/Patotricks15/Generative-AI-projects/tree/main/person_information_extractor)
+
+Objective: The objective of this code is to extract relevant information from Wikipedia person profiles and retrieve structured information such as the person's name, birth year, and height in meters.
+
+

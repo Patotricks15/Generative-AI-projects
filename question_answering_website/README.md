@@ -1,16 +1,19 @@
-# "Question-Answering Assistant for Climate Change"
+# Question-Answering System for Climate Change Wikipedia Page
 
 ## Objective
-The objective of this code is to create a question-answering assistant for climate change by retrieving information from a given website and generating concise answers to user queries.
+The objective of this code is to create a question-answering system for the Wikipedia page on climate change using language processing and retrieval techniques.
 
 ## Summary of the Objective:
-- Retrieve text from a website related to climate change.
-- Split the text into smaller pieces, create a vectorstore, and generate concise answers to user queries.
+- Extract text from the Wikipedia page on climate change.
+- Split the text into smaller pieces and create a vectorstore for language processing and retrieval.
+- Use the vectorstore to retrieve and generate responses to user queries.
 
 # Flowchart
 ```mermaid
 flowchart TD
-A[Retrieve text from the website] --> B[Split the text into smaller pieces]
-B --> C[Create a vectorstore]
-C --> D[Generate concise answers to user queries]
+A[Extract text from Wikipedia page] --> B[Create Document]
+B --> C[Split Document into smaller pieces]
+C --> D[Create Vectorstore]
+D --> E[Retrieve and generate response]
+E --> F[Display answer and context]
 ```

@@ -1,20 +1,20 @@
-# "Stock Data Analysis with Chatbot Integration"
+# Stock Data Analysis with Chatbot Integration
 
 ## Objective
-The objective of this code is to demonstrate how to use the yfinance library to download historical stock data, create a pandas dataframe, and integrate a chatbot to interact with the data.
+The objective of this code is to perform stock data analysis using the yfinance library and integrate a chatbot to interact with the user for querying the data.
 
 ## Summary of the Objective:
-- Download historical stock data using the yfinance library.
-- Create a pandas dataframe from the downloaded data.
-- Integrate a chatbot to interact with the stock data.
+- Download stock data using the yfinance library for a specified ticker symbol.
+- Create a pandas dataframe from the downloaded stock data.
+- Integrate a chatbot to interact with the user and query the stock data.
 
 # Flowchart
 ```mermaid
 flowchart TD
-A[Define ticker symbol] --> B[Download data]
-B --> C[Create pandas dataframe]
-C --> D[Integrate chatbot]
-D --> E[Ask question]
+A[Define the ticker] --> B[Download the data]
+B --> C[Define the period (1 year)]
+C --> D[Define the pandas dataframe agent]
+D --> E[Ask the question]
 ```
 
-The README has been generated based on the provided Python code.
+The flowchart illustrates the process of defining the ticker, downloading the data, defining the period, creating the pandas dataframe agent, and asking the question to interact with the chatbot.

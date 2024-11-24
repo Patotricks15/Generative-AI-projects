@@ -1,25 +1,17 @@
-# "Python Chatbot with Arithmetic Tools"
+# Python ChatOpenAI with Mathematical Tools
 
 ## Objective
-The objective of this Python code is to create a chatbot using the langchain_openai library and implement arithmetic tools for addition and multiplication. The chatbot will be able to answer arithmetic queries using the implemented tools.
+The objective of this code is to demonstrate the integration of the Langchain OpenAI module with mathematical tools for performing arithmetic operations.
 
 ## Summary of the Objective:
-- Create a chatbot using the langchain_openai library.
-- Implement arithmetic tools for addition and multiplication.
+- Integrate Langchain OpenAI module with mathematical tools
+- Perform arithmetic operations using the integrated tools
 
 # Flowchart
 ```mermaid
 flowchart TD
-A[User Query] --> B{Invoke Chatbot}
-B --> |Invoke Arithmetic Tools| C{Tool Call}
-C --> |Select Tool| D[Addition Tool]
-C --> |Select Tool| E[Multiplication Tool]
-D --> F{Invoke Addition Tool}
-E --> G{Invoke Multiplication Tool}
-F --> H[Tool Response]
-G --> I[Tool Response]
-H --> J[Chatbot Response]
-I --> J
+A[Input Query] --> B[Langchain OpenAI]
+B --> C[Tool Invocation]
+C --> D[Tool Execution]
+D --> E[Output Response]
 ```
-
-The README has been generated based on the provided Python code.

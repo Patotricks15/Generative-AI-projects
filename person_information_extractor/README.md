@@ -1,25 +1,34 @@
-# "Person Information Extraction and Structured Output from Text"
+# Text Extraction and Structured Information Retrieval for Wikipedia Person Profiles
 
 ## Objective
-The objective of this code is to extract relevant information about a person from a given text, such as the person's name, birth year, and height in meters. The code uses language processing and AI models to extract and structure the information.
+The objective of this code is to extract relevant information from Wikipedia person profiles and retrieve structured information such as the person's name, birth year, and height in meters.
 
 ## Summary of the Objective:
-- Extract relevant information about a person from a given text.
-- Structure the extracted information into a predefined format.
+- Extract relevant information from Wikipedia person profiles.
+- Retrieve structured information such as the person's name, birth year, and height in meters.
 
 # Flowchart
 ```mermaid
 flowchart TD
-A[Input: Person's Name] --> B[Retrieve Wikipedia Article]
-B --> C[Extract Text from Article]
+A[Input Person] --> B[Extract Wikipedia URL]
+B --> C[Extract Text from URL]
 C --> D[Split Text into Chunks]
 D --> E[Create Vectorstore]
 E --> F[Retrieve Relevant Chunks]
 F --> G[Combine Chunks]
-G --> H[Execute Model with Combined Text]
-H --> I[Output: Structured Person Information]
+G --> H[Execute Model with Reduced Text]
+H --> I[Output Structured Information]
 ```
 
-The code begins by taking the input of the person's name. It then retrieves the Wikipedia article related to the person and extracts the text from the article. The text is split into chunks, and a vectorstore is created. Relevant chunks are retrieved, combined, and then used as input for the model execution. Finally, the output is the structured information about the person.
+The Python code performs the following tasks:
+1. Imports necessary modules and packages.
+2. Prompts the user to input a person's name and constructs the Wikipedia URL for the person's profile.
+3. Extracts the text content from the Wikipedia URL and creates a document object.
+4. Splits the text into chunks for processing.
+5. Creates a vectorstore and retrieves relevant chunks using similarity search.
+6. Defines a structured output class for the extracted information.
+7. Defines a prompt and model for structured information extraction.
+8. Defines a function to retrieve relevant chunks for specific queries.
+9. Executes the model with the reduced text and outputs the structured information.
 
-The README has been generated based on the provided Python code.
+The code uses various language processing and information retrieval techniques to extract and structure information from Wikipedia person profiles.

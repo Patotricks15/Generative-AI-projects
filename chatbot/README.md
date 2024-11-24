@@ -1,16 +1,16 @@
-# "Chatbot Workflow with OpenAI Model Integration and Memory Saver"
+# Chatbot Interaction with OpenAI Model and Memory Saver
 
 ## Objective
-The objective of this code is to create a chatbot workflow that integrates an OpenAI model for generating responses and utilizes a memory saver to store the conversation history.
+The objective of this code is to create a chatbot interaction using the OpenAI model and a memory saver to store the conversation history.
 
 ## Summary of the Objective:
-- Create a chatbot workflow with an integrated OpenAI model.
+- Create a chatbot interaction using the OpenAI model.
 - Implement a memory saver to store the conversation history.
 
 # Flowchart
 ```mermaid
 flowchart TD
-subgraph Chatbot Workflow
+subgraph StateGraph
     START --> model
     model
 end

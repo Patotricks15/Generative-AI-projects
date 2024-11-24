@@ -1,17 +1,20 @@
-# "Interactive Joke Generator with OpenAI Language Model"
+# Interactive Joke Generator with OpenAI Language Model
 
 ## Objective
-The objective of this code is to create an interactive joke generator using the OpenAI Language Model. The user provides a topic, and the code uses the model to generate a joke related to the given topic.
+The objective of this code is to create an interactive joke generator using the OpenAI language model. The program takes a user input topic and generates a joke based on that topic.
 
 ## Summary of the Objective:
-- Set up the configurations for the OpenAI Language Model.
+- Set up the configurations for the OpenAI language model.
 - Create a prompt template for generating jokes based on user input topics.
-- Use the prompt template and the language model to generate a joke based on the user-provided topic.
+- Take user input for the topic.
+- Use the prompt template and the language model to generate a joke based on the user input topic.
 
 # Flowchart
 ```mermaid
 flowchart TD
-A[User provides a topic] --> B[Create a prompt template with the topic]
-B --> C[Use the prompt template and language model to generate a joke]
-C --> D[Display the generated joke]
+A[Set up the configs] --> B[Instance the ChatPromptTemplate with "topic" parameter]
+B --> C[User input the text]
+C --> D[Creating the CHAIN containing prompt template and model]
+D --> E[Getting the chain result]
+E --> F[Print the model response]
 ```

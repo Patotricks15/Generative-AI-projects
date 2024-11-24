@@ -40,6 +40,7 @@ for subfolder_name in tqdm(os.listdir(current_directory), desc="Processing subfo
     title_chain = LLMChain(llm=model, prompt=title_prompt_template)
     title_response = title_chain.run(context=main_docs[0].page_content)
     title = title_response.strip()
+    title = title.replace('"', '')
     title = title.split(":")[1] if ":" in title else title
 
     # Step 5: Define the system prompt for generating the documentation

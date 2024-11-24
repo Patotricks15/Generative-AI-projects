@@ -4,12 +4,13 @@
 The objective of this code is to extract tables from PDF documents using the GPT-4o-mini model and save the extracted tables as Excel files.
 
 ## Summary of the Objective:
-- Set up the GPT-4o-mini model for table extraction from PDFs.
-- Read the PDF document and split the text.
-- Create a vector store for the text and set up a retriever.
-- Define a data model for the extracted tables.
-- Use the GPT-4o-mini model to extract tables from the text.
-- Save the extracted tables as Excel files.
+- Set up the GPT-4o-mini model for table extraction
+- Read the PDF document
+- Split the text into semantic chunks
+- Create a vector store for the documents
+- Define a class for the table and table extraction
+- Use the GPT-4o-mini model to extract tables from the text
+- Save the extracted tables as Excel files
 
 # Flowchart
 ```mermaid
@@ -20,22 +21,35 @@ subgraph Setup
     C[Text split]
     D[Vectorstore]
 end
-subgraph Define Data Model
+subgraph Table Extraction
     E[Define Table BaseModel]
     F[Define ExtractionTable]
+    G[Create Prompt]
+    H[Use GPT-4o-mini model for extraction]
 end
-G[Prompt]
-H[Extractor]
-I[Create new directory]
-J[Table -> dataframe -> excel]
+subgraph Save Tables
+    I[Create new directory]
+    J[Convert table to DataFrame]
+    K[Save as Excel]
+end
 A --> B
 B --> C
 C --> D
 D --> E
 E --> F
+F --> G
 G --> H
 H --> I
 I --> J
+J --> K
 ```
 
-The code begins by setting up the GPT-4o-mini model for table extraction from PDFs. It then reads the PDF document, splits the text, and creates a vector store for the text. Next, it defines the data model for the extracted tables and uses the GPT-4o-mini model to extract tables from the text. Finally, it saves the extracted tables as Excel files.
+The Python code performs the following tasks:
+1. Sets up the GPT-4o-mini model for table extraction
+2. Reads the PDF document
+3. Splits the text into semantic chunks
+4. Creates a vector store for the documents
+5. Defines the Table BaseModel and ExtractionTable
+6. Creates a prompt for table extraction
+7. Uses the GPT-4o-mini model to extract tables from the text
+8. Saves the extracted tables as Excel files

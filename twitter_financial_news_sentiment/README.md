@@ -1,22 +1,30 @@
-# "Financial News Sentiment Analysis with GPT-4o-mini Model"
+# Financial News Sentiment Analysis with GPT-4o-mini Model
 
 ## Objective
-The objective of this code is to perform sentiment analysis on financial news using the GPT-4o-mini model. The sentiment analysis involves extracting the financial market sentiment from the given text and providing an explanation for the chosen sentiment.
+The objective of this code is to perform sentiment analysis on financial news using the GPT-4o-mini model. The sentiment analysis involves classifying the financial news into bearish, bullish, or neutral categories and providing an explanation for the chosen sentiment.
 
 ## Summary of the Objective:
 - Read financial news data from a CSV file.
 - Preprocess the data and create maps for labels.
-- Use the GPT-4o-mini model to generate sentiment analysis for the financial news.
-- Measure the accuracy of the sentiment analysis and save the results to an Excel file.
+- Use the GPT-4o-mini model to classify the financial news sentiment and generate explanations.
+- Measure the accuracy of the sentiment analysis.
+- Save the results to an Excel file.
 
 # Flowchart
 ```mermaid
 flowchart TD
-start[Start] --> read_data{Read Data}
-read_data --> filter_data{Filter Data}
-filter_data --> create_maps{Create Maps for Labels}
-create_maps --> generate_sentiment{Generate Sentiment Analysis}
-generate_sentiment --> measure_accuracy{Measure Accuracy}
-measure_accuracy --> save_results{Save Results to Excel}
-save_results --> end[End]
+ReadingData --> Filtering
+Filtering --> CreatingMaps
+CreatingMaps --> DefinePrompt
+DefinePrompt --> DefineModel
+DefineModel --> DefineChain
+DefineChain --> GenerateClassification
+GenerateClassification --> ApplyFunction
+ApplyFunction --> SaveExcel
+SaveExcel --> MeasuringAccuracy
+MeasuringAccuracy --> MeasuringExecutionTime
 ```
+
+The code begins by reading financial news data from a CSV file and then filters the data to reduce execution time. It creates maps for labels and uses the GPT-4o-mini model to classify the financial news sentiment and generate explanations. The accuracy of the sentiment analysis is measured, and the results are saved to an Excel file. Finally, the execution time is measured.
+
+The README has been generated from the provided Python code.

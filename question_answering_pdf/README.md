@@ -1,19 +1,43 @@
-# "AI Question-Answering System for Nike's Financial Reports"
+# AI-Powered Question Answering System for Nike's Financial Reports
 
 ## Objective
-The objective of this AI question-answering system is to retrieve and analyze financial data from Nike's financial reports and provide concise answers to specific questions related to Nike's revenue and other financial metrics.
+The objective of this AI-powered system is to use language processing and AI models to answer questions related to Nike's financial reports.
 
 ## Summary of the Objective:
-- Retrieve financial data from Nike's financial reports.
-- Use the retrieved data to answer specific questions related to Nike's revenue and other financial metrics.
+- Use PyPDFLoader to load Nike's financial reports in PDF format.
+- Split the documents into chunks, create a retrieval chain, and use an AI model to answer questions related to Nike's financial data.
 
 # Flowchart
 ```mermaid
 flowchart TD
-A[Load PDF] --> B[Split Text]
-B --> C[Create Vector Store]
-C --> D[Retrieve Context]
-D --> E[Answer Question]
+subgraph langchain_community
+    subgraph document_loaders
+        PyPDFLoader
+    end
+end
+subgraph langchain_core
+    subgraph vectorstores
+        InMemoryVectorStore
+    end
+    subgraph prompts
+        ChatPromptTemplate
+    end
+end
+subgraph langchain_openai
+    OpenAIEmbeddings
+    ChatOpenAI
+end
+subgraph langchain_text_splitters
+    RecursiveCharacterTextSplitter
+end
+subgraph langchain.chains
+    create_retrieval_chain
+    combine_documents_chain
+end
+PyPDFLoader --> InMemoryVectorStore
+RecursiveCharacterTextSplitter --> InMemoryVectorStore
+InMemoryVectorStore --> create_retrieval_chain
+ChatOpenAI --> create_stuff_documents_chain
+ChatPromptTemplate --> create_stuff_documents_chain
+create_retrieval_chain --> create_stuff_documents_chain
 ```
-
-The Python code initializes a question-answering system for Nike's financial reports. It loads a PDF file containing the financial reports, splits the text, creates a vector store, retrieves context, and answers specific questions related to Nike's revenue and other financial metrics. The system uses the OpenAI GPT-3.5 model for question-answering tasks.

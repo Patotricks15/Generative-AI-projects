@@ -1,19 +1,18 @@
-# Agent for Interacting with a SQL Database Using Chat OpenAI
+# Agent for Interacting with SQL Database Using ChatOpenAI
 
 ## Objective
-The objective of this code is to create an agent that interacts with a SQL database using Chat OpenAI. The agent is designed to take input questions, create syntactically correct SQLite queries, run the queries, and return the results. It uses a combination of SQLDatabaseToolkit, ChatOpenAI, and OpenAIEmbeddings to achieve this functionality.
+The objective of this code is to create an agent that interacts with an SQL database using ChatOpenAI to execute syntactically correct SQLite queries based on user input and return the results.
 
 ## Summary of the Objective:
-- Create an agent that interacts with a SQL database
-- Use Chat OpenAI to generate syntactically correct SQLite queries based on input questions
+- Create an agent that interacts with an SQL database using ChatOpenAI.
+- Execute syntactically correct SQLite queries based on user input and return the results.
 
 # Flowchart
 ```mermaid
 flowchart TD
-A[Reading the database sql] -->|Instance the model| B[Instance the toolkit and insert this tools into a list]
-B -->|Writing the basic prompt| C[Creating the agent]
-C -->|Develop the chat| D[Input]
-D -->|Output| C
+    A[Reading the database sql] -->|Instance the model| B(Instance the toolkit and insert this tools into a list)
+    B -->|Writing the basic prompt| C(Creating the agent)
+    C --> D(Develop the chat)
 ```
 
-The README has been generated based on the provided Python code.
+The provided Python code initializes an SQL database, creates a ChatOpenAI model, and develops an agent to interact with the database. The agent executes syntactically correct SQLite queries based on user input and returns the results. The flowchart illustrates the sequence of steps involved in the code execution.

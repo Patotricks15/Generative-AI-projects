@@ -1,46 +1,32 @@
-# "NIKE, Inc. Executive Data Extraction and Analysis"
+# NIKE, Inc. Executive Data Extraction and Analysis
 
 ## Objective
-The objective of this code is to extract relevant data about executive officers from documents related to NIKE, Inc and analyze the extracted information.
+The objective of this code is to extract and analyze data related to executives of NIKE, Inc.
 
 ## Summary of the Objective:
-- Extract data about executive officers from NIKE, Inc documents
-- Analyze the extracted data to obtain information such as executive names, job positions, age, sector/field within NIKE, Inc, start date at NIKE, Inc, and gender
+- Extract relevant information about NIKE, Inc executives from a given document.
+- Analyze the extracted data to obtain insights about the executives.
 
 # Flowchart
 ```mermaid
 flowchart TD
 A[Load Document] --> B[Split Document]
 B --> C[Create Vectorstore]
-C --> D[Split Sub-Documents]
-D --> E[Add Sub-Documents to Vectorstore]
-E --> F[Retrieve Relevant Chunks]
-F --> G[Combine Chunks]
-G --> H[Execute Model]
+C --> D[Add Sub-documents to Retriever]
+D --> E[Extract Relevant Chunks]
+E --> F[Combine Chunks]
+F --> G[Execute Model]
 ```
 
-The code begins by loading the document from a specified file path and then splitting the document into chunks. It creates a vectorstore and splits the sub-documents, adding them to the vectorstore. It then retrieves relevant chunks, combines them, and executes the model to extract and analyze the data.
+The Python code performs the following tasks:
+1. Loads the document from a specified file path.
+2. Splits the document into chunks for processing.
+3. Creates a vectorstore for storing document embeddings.
+4. Adds sub-documents to the retriever for data retrieval.
+5. Extracts relevant chunks from the documents.
+6. Combines the extracted chunks into a reduced text.
+7. Executes a model to extract structured data about NIKE, Inc executives.
 
-The code utilizes various libraries and modules such as langchain_chroma, langchain_openai, langchain_text_splitters, langchain_core, langchain_community, pydantic, and uuid to achieve the objective.
+The code utilizes various libraries and modules for document loading, text splitting, data extraction, and analysis.
 
-The extracted data is structured using the `Executive` class, and a prompt is created to guide the extraction process. Relevant chunks are obtained using queries related to executive information, and the model is executed to obtain the final result.
-
-The result of the model execution is printed at the end of the code.
-
-Overall, the code demonstrates the extraction and analysis of executive data from NIKE, Inc documents using a structured approach.
-
-```python
-from langchain_chroma import Chroma
-from langchain_openai import OpenAIEmbeddings
-from langchain_text_splitters import RecursiveCharacterTextSplitter, TokenTextSplitter
-from langchain_openai import ChatOpenAI
-from langchain_core.prompts import ChatPromptTemplate
-from typing import Optional, List
-from pydantic import BaseModel, Field
-from langchain_community.document_loaders import PyPDFLoader
-from langchain.storage import InMemoryByteStore
-from langchain.retrievers.multi_vector import MultiVectorRetriever
-import uuid
-
-# ... [Truncated for brevity] ...
-```
+The README has been generated successfully from the provided Python code.

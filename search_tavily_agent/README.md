@@ -1,17 +1,17 @@
-# "Interactive Tavily Search Agent with Language Processing"
+# Interactive Tavily Search Agent with OpenAI Chat Integration
 
 ## Objective
-The objective of this code is to create an interactive Tavily search agent using language processing. The agent uses the OpenAI GPT-3.5 model to process user input and then utilizes the Tavily search tool to provide search results.
+The objective of this code is to create an interactive Tavily search agent that integrates with OpenAI Chat. The agent uses the Tavily search tool to provide search results based on user input.
 
 ## Summary of the Objective:
-- Create an interactive Tavily search agent
-- Utilize language processing with the OpenAI GPT-3.5 model
-- Use the Tavily search tool to provide search results
+- Create an interactive Tavily search agent.
+- Integrate the agent with OpenAI Chat to provide search results.
 
 # Flowchart
 ```mermaid
 flowchart TD
-A[User Input] -->|Process| B{Agent}
-B -->|Use| C[Tavily Search Tool]
-C --> D[Display Search Results]
+    A[User Input] -->|Tavily search query| B{Agent Executor}
+    B -->|Invoke| C[OpenAI Chat Integration]
+    C --> D[Retrieve Search Results]
+    D --> E[Display Search Results]
 ```
