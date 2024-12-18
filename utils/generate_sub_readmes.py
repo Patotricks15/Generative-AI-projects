@@ -12,11 +12,26 @@ model = ChatOpenAI(model="gpt-3.5-turbo-1106", temperature=0)
 # Step 2: Iterate through subfolders and process "main.py" files
 current_directory = os.getcwd()
 
+
+
 for subfolder_name in tqdm(os.listdir(current_directory), desc="Processing subfolders"):
     subfolder_path = os.path.join(current_directory, subfolder_name)
     
     # Skip if not a directory or if the directory is "files" or "venv"
-    if not os.path.isdir(subfolder_path) or subfolder_name in ["files", "venv"]:
+    if not os.path.isdir(subfolder_path) or subfolder_name in ['timeline_generator',
+                                                                'question_answering_youtube_videos',
+                                                                'simple_translator',
+                                                                'question_answering_database',
+                                                                'nike_executive_officers_information_extraction',
+                                                                'extracting_dataframe_from_paper',
+                                                                'twitter_financial_news_sentiment', 'simple_calculator_tool',
+                                                                'check_dataframe_quality', 'question_answering_pdf',
+                                                                 'summarizing_text', 'question_answering_website', 
+                                                                 'question_answering_world_bank_data', 'chatbot', 
+                                                                 'conversational_website', 'npc_simulator', 'utils', 'files',
+                                                                 'financial_analyser', 'question_answering_yfinance_dataframe',
+                                                                 'orchestrating_summarization_using_langgraph', 'search_tavily_agent',
+                                                                 'joker', 'person_information_extractor', 'venv']:
         continue
 
     # Ensure the "main.py" file exists in the subfolder
