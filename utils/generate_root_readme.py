@@ -4,7 +4,9 @@ import os
 current_directory = os.getcwd()
 
 # Lista de subpastas excluindo 'venv' e outras pastas indesejadas
-subfolders = [folder for folder in os.listdir(current_directory) if os.path.isdir(folder) and folder not in ['.git', 'venv', 'utils', 'files']]
+subfolders = [folder for folder in os.listdir(current_directory) if os.path.isdir(folder) and folder not in ['.git', 'venv', 'utils', 'files',
+                                                                                                             'financial_analyser',
+                                                                                                             'npc_simulator']]
 
 # Inicializa o conteúdo do README principal
 readme_content = "# My Generative AI Portfolio\n\n"

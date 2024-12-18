@@ -64,12 +64,6 @@ Objective: The objective of this code is to create a chatbot interaction using t
 
 Objective: The objective of this code is to create a chatbot that retrieves information from the Wikipedia page on climate change and provides conversational responses to user queries.
 
-[Npc Simulator](https://github.com/Patotricks15/Generative-AI-projects/tree/main/npc_simulator)
-
-
-[Financial Analyser](https://github.com/Patotricks15/Generative-AI-projects/tree/main/financial_analyser)
-
-
 [Stock Data Analysis with Chatbot Integration](https://github.com/Patotricks15/Generative-AI-projects/tree/main/question_answering_yfinance_dataframe)
 
 Objective: The objective of this code is to perform stock data analysis using the yfinance library and integrate a chatbot to interact with the user for querying the data.
