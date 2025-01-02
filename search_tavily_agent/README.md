@@ -7,6 +7,9 @@ The objective of this code is to create an interactive Tavily search agent that 
 - Create an interactive Tavily search agent.
 - Integrate the agent with OpenAI Chat to provide search results.
 
+## Medium tutorial:
+[Click here](https://patotricks15.medium.com/building-a-smart-search-agent-with-langchain-and-tavily-search-6838076e35f1)
+
 # Flowchart
 ```mermaid
 flowchart TD
