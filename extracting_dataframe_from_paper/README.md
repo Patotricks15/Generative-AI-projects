@@ -12,6 +12,9 @@ The objective of this code is to extract tables from PDF documents using the GPT
 - Use the GPT-4o-mini model to extract tables from the text
 - Save the extracted tables as Excel files
 
+## Medium tutorial
+[Click here](https://patotricks15.medium.com/generative-ai-project-extracting-pandas-dataframes-from-scientific-papers-8f38b07bee9b)
+
 # Flowchart
 ```mermaid
 flowchart TD
