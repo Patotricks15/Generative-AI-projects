@@ -11,7 +11,6 @@ from langchain_experimental.text_splitter import SemanticChunker
 import os
 from tqdm import tqdm
 
-# Set up the model
 model = ChatOpenAI(model="gpt-4o-mini", temperature=0)
 
 # Read the pdf
